@@ -1,3 +1,8 @@
 function ucFirst(str) {
-  // ваш код...
+  if (str === "") {
+    return "";
+  } else {
+    let result = str.substr(1, str.length);
+    return `${str[0].toUpperCase()}${result}`;
+  }
 }
